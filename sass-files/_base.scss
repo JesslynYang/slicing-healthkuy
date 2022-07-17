@@ -1,0 +1,204 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900");
+
+// Colors
+$bg: #fafafa;
+$bg-light: #ffffff;
+$bg-secondary: #f5f5f5;
+
+// $primary: #0d66dd;
+
+$primary-light: linear-gradient(
+  336.8deg,
+  rgba(12, 100, 220, 0.1) 2.51%,
+  rgba(44, 149, 219, 0.1) 87.37%
+);
+
+$text: #232631;
+$text-light: #ffffff;
+$text-secondary: #848484;
+$text-tertiary: #7b7b7b;
+$text-grey: #8a8a8a;
+
+$orange: #eb7530;
+
+$red-light: #fff2f0;
+$green-light: #eaf9ef;
+$yellow-light: #fff6e7;
+$blue-light: #ebf7ff;
+
+$default: transparent;
+
+:root {
+  --primary: #0d66dd;
+}
+
+$primary: var(--primary);
+
+html,
+body {
+  background-color: $bg;
+  //   background-color: $primary;
+    // background-color: $primary;
+  // background-color: var(--primary);
+
+  > * {
+    font-family: "Poppins", sans-serif;
+  }
+
+  svg {
+    stop {
+      stop-color: $primary;
+    }
+  }
+}
+
+@mixin reset_spacing {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin flex-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button {
+  outline: none;
+  border: none;
+
+  text-decoration: none;
+}
+
+%text-dark {
+  color: $text;
+}
+%text-secondary {
+  color: $text;
+}
+
+.basic {
+  &- {
+    &sub-title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      /* identical to box height */
+      letter-spacing: 0.005em;
+      text-transform: capitalize;
+
+      background: linear-gradient(336.8deg, #0c64dc 2.51%, #2c95db 87.37%),
+        #232631;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    &title {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 84px;
+      text-transform: capitalize;
+
+      color: $text;
+    }
+
+    &header {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 48px;
+      text-transform: capitalize;
+
+      color: $text;
+    }
+
+    &desc {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+
+      color: $text-grey;
+
+      margin-top: 12px;
+      margin-bottom: 56px;
+    }
+
+    &small {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height */
+
+      color: $text-grey;
+    }
+
+    &btn {
+      @include button;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height */
+
+      color: $text-light;
+      // width: 156px;
+      height: 48px;
+
+      padding: 12px 32px;
+
+      background: linear-gradient(336.8deg, #0c64dc 2.51%, #2c95db 87.37%);
+      border-radius: 12px;
+
+
+      &.no-fill {
+        @include button;
+        color: $primary;
+        background: $default;
+        border: 1px solid $primary;
+      }
+    }
+
+    &link {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height */
+
+      background: linear-gradient(336.8deg, #0c64dc 2.51%, #2c95db 87.37%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      padding: 12px 32px;
+    }
+  }
+}
+
+.section {
+  &- {
+    &title {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 48px;
+
+      color: $text;
+
+      width: 100%;
+
+      @include md {
+        width: 75%;
+      }
+
+      @include lg {
+        width: 50% !important;
+      }
+    }
+
+    &desc {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: $text-grey;
+    }
+  }
+}

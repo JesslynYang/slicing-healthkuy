@@ -1,0 +1,57 @@
+#services {
+    padding-top: 100px;
+    padding-bottom: 120px;
+
+    .services {
+        &- {
+            &card {
+                background: #FFFFFF;
+                border-radius: 12px;
+                padding: 24px;
+
+                margin-bottom: 10px;
+            }
+
+            &icon {
+
+                width: 52px;
+                height: 52px;background: #FFF2F0;
+                border-radius: 12px;
+            }
+
+            &title {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height */
+                text-transform: capitalize;
+                
+                color: $text;
+            }
+
+            &desc {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                
+                color: $text-grey;
+            }
+
+            &link {
+
+                >* {
+                    display: inline-block;
+                }
+                span {
+                    font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+color: #EB7530;
+margin-right: 12px;
+                }
+            }
+        }
+    }
+}

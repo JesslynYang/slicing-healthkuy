@@ -1,0 +1,105 @@
+#review {
+    margin-bottom: 120px;
+  .basic-button {
+    margin-top: 60px;
+  }
+
+  .review {
+    &- {
+      &image {
+        &- {
+          &container {
+            width: 487.5px;
+            height: 600px;
+
+            img:last-child {
+              left: 40px;
+              right: 0;
+            }
+          }
+
+          &card {
+            background: $bg-light;
+            border-radius: 24px;
+            width: 180px;
+height: 193px;
+
+            top: -20%;
+            left: 0%;
+          }
+
+          &icon {
+            display: flex;
+            justify-content: center;
+
+            align-items: flex-end;
+            width: 64px;
+            height: 64px;
+            background: $primary-light;
+            border-radius: 50%;
+
+            overflow: hidden;
+          }
+
+          &value {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            /* identical to box height */
+            text-align: center;
+            letter-spacing: 0.01em;
+
+            color: $text;
+          }
+
+          &label {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            /* identical to box height */
+
+            color: $text-grey;
+          }
+        }
+      }
+
+      &card {
+        background: #ffffff;
+        border-radius: 24px;
+
+        padding: 18px;
+
+        margin-bottom: 20px;
+      }
+
+      &profile {
+        width: 42px;
+        height: 42px;
+        margin-right: 12px;
+      }
+
+      &name {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        /* identical to box height */
+
+        color: $text;
+      }
+
+      &rating {
+        margin-left: 3px;
+      }
+
+      &desc {
+        margin-top: 18px;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+
+        color: $text-grey;
+      }
+    }
+  }
+}
