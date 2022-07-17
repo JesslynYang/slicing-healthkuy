@@ -1,0 +1,75 @@
+#hero {
+  .hero {
+    &- {
+      &image {
+        &- {
+          &container {
+            width: 487.5px;
+            height: 600px;
+
+            
+          }
+
+          &card {
+            background: $bg-light;
+            border-radius: 24px 12px;
+
+            top: 20%;
+            left: -25%;
+          }
+
+          &-title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+
+            color: $text;
+          }
+
+          &desc {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+            color: $text;
+
+            &.lighter {
+              font-weight: 400;
+              color: $text-secondary;
+            }
+          }
+
+          &profile {
+            width: 42px;
+            height: 42px;
+
+            margin-right: 8px;
+          }
+
+          &role {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            /* identical to box height */
+
+            color: $text-secondary;
+          }
+
+          &top {
+            padding: 14px 16px;
+          }
+
+          &section {
+            padding: 8px 16px;
+
+            &.active {
+              background-color: $bg;
+            }
+          }
+        }
+      }
+    }
+  }
+}

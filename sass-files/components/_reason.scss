@@ -1,0 +1,55 @@
+#reason {
+  margin-bottom: 120px;
+  .reason {
+    &- {
+      &image {
+        &- {
+          &container {
+            width: 487.5px;
+            height: 600px;
+
+            img:last-child {
+              left: 40px;
+              right: 0;
+            }
+          }
+        }
+      }
+
+      &card {
+        padding: 24px 32px;
+        background: #ffffff;
+        border-radius: 12px;
+
+        margin-bottom: 24px;
+      }
+
+      &icon {
+        width: 52px;
+        height: 52px;
+
+        background: #e8f1fc;
+        border-radius: 12px;
+        margin-right: 21px;
+      }
+
+      &title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height */
+        text-transform: capitalize;
+
+        color: $text;
+      }
+
+      &desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: $text-grey;
+      }
+    }
+  }
+}

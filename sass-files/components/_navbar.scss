@@ -1,0 +1,79 @@
+.navbar {
+  background: $default;
+  height: 112px;
+
+  background-color: $bg-light !important;
+  margin-bottom: 70px;
+
+  &- {
+    &brand {
+      margin-right: 60px;
+      &- {
+        &text {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 36px;
+          color: $text;
+
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+
+  .nav {
+    &- {
+      &link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height */
+
+        color: $text;
+
+        &.active {
+          color: $primary !important;
+        }
+
+        @include lg {
+        margin-right: 40px;
+
+        }
+      }
+
+      &btn {
+        @include button;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height */
+
+        color: $text;
+        background-color: $default;
+
+        padding: 12px 32px;
+
+        border: 1px solid $primary;
+        border-radius: 12px;
+        
+        width: 100%;
+
+        margin-left: 10px;
+
+        @include lg {
+          width: fit-content;
+        }
+
+        &.bg {
+          background: linear-gradient(
+            336.8deg,
+            rgba(12, 100, 220, 0.1) 2.51%,
+            rgba(44, 149, 219, 0.1) 87.37%
+          );
+
+          color: $primary;
+        }
+      }
+    }
+  }
+}
