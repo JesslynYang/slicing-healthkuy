@@ -116,7 +116,7 @@ body svg stop {
   line-height: 24px;
   /* identical to box height */
   color: #ffffff;
-  height: 48px;
+  min-height: 48px;
   padding: 12px 32px;
   background: linear-gradient(336.8deg, #0c64dc 2.51%, #2c95db 87.37%);
   border-radius: 12px;
@@ -207,7 +207,6 @@ body svg stop {
   color: #232631;
   background-color: transparent;
   padding: 12px 32px;
-  border: 1px solid var(--primary);
   border-radius: 12px;
   width: 100%;
   margin-left: 10px;
@@ -222,6 +221,28 @@ body svg stop {
   color: var(--primary);
 }
 
+#hero .hero-btn {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  text-transform: capitalize;
+  /* identical to box height */
+  width: 100%;
+  background: linear-gradient(336.8deg, rgba(12, 100, 220, 0.1) 2.51%, rgba(44, 149, 219, 0.1) 87.37%);
+  text-transform: capitalize;
+}
+#hero .hero-btn:hover {
+  cursor: pointer;
+}
 #hero .hero-image-container {
   width: 487.5px;
   height: 600px;
@@ -229,6 +250,8 @@ body svg stop {
 #hero .hero-image-card {
   background: #ffffff;
   border-radius: 24px 12px;
+  width: 230px;
+  height: 260px;
   top: 20%;
   left: -25%;
 }
@@ -265,6 +288,9 @@ body svg stop {
 #hero .hero-image-top {
   padding: 14px 16px;
 }
+#hero .hero-image-bottom {
+  padding: 14px 16px;
+}
 #hero .hero-image-section {
   padding: 8px 16px;
 }
@@ -288,6 +314,18 @@ body svg stop {
   background: #FFF2F0;
   border-radius: 12px;
 }
+#services .services-icon.red {
+  background-color: #fff2f0;
+}
+#services .services-icon.green {
+  background-color: #eaf9ef;
+}
+#services .services-icon.yellow {
+  background-color: #fff6e7;
+}
+#services .services-icon.blue {
+  background-color: #ebf7ff;
+}
 #services .services-title {
   font-weight: 600;
   font-size: 16px;
@@ -295,6 +333,7 @@ body svg stop {
   /* identical to box height */
   text-transform: capitalize;
   color: #232631;
+  margin-bottom: 6px;
 }
 #services .services-desc {
   font-weight: 400;
@@ -474,11 +513,12 @@ body svg stop {
   margin-top: 60px;
 }
 #review .review-image-container {
-  width: 487.5px;
-  height: 600px;
+  width: 416px;
+  height: 485px;
 }
 #review .review-image-container img:last-child {
-  left: 40px;
+  bottom: 0;
+  left: -20px;
   right: 0;
 }
 #review .review-image-card {
@@ -487,7 +527,7 @@ body svg stop {
   width: 180px;
   height: 193px;
   top: -20%;
-  left: 0%;
+  left: -20%;
 }
 #review .review-image-icon {
   display: flex;
@@ -542,6 +582,13 @@ body svg stop {
   font-size: 18px;
   line-height: 27px;
   color: #8a8a8a;
+}
+#review .review-thumbnail {
+  position: absolute;
+  left: -20px;
+  top: 40px;
+  right: 0;
+  transform: scale(1.2);
 }
 
 footer {

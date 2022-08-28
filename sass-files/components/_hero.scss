@@ -1,19 +1,49 @@
 #hero {
   .hero {
     &- {
+      &btn {
+        @include button;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+
+        border-radius: 12px;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+        
+        text-transform: capitalize;
+        /* identical to box height */
+
+        width: 100%;
+
+        background: $primary-light;
+
+        text-transform: capitalize;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      
       &image {
         &- {
           &container {
             width: 487.5px;
             height: 600px;
-
-            
           }
 
           &card {
             background: $bg-light;
             border-radius: 24px 12px;
 
+            width: 230px;
+            height: 260px;
+            
             top: 20%;
             left: -25%;
           }
@@ -58,6 +88,10 @@
           }
 
           &top {
+            padding: 14px 16px;
+          }
+
+          &bottom {
             padding: 14px 16px;
           }
 

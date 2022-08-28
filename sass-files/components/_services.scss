@@ -13,10 +13,26 @@
             }
 
             &icon {
-
                 width: 52px;
-                height: 52px;background: #FFF2F0;
+                height: 52px;
+                background: #FFF2F0;
                 border-radius: 12px;
+
+                &.red {
+                    background-color: $red-light;
+                }
+
+                &.green {
+                    background-color: $green-light;
+                }
+
+                &.yellow {
+                    background-color: $yellow-light;
+                }
+
+                &.blue {
+                    background-color: $blue-light;
+                }
             }
 
             &title {
@@ -27,6 +43,8 @@
                 text-transform: capitalize;
                 
                 color: $text;
+
+                margin-bottom: 6px;
             }
 
             &desc {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FuniEra</title>
+    <title>HealthKuy</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,6 +20,33 @@
 
 <body style="--theme: pink;">
 
+    <button type="button" class="btn btn-primary fixed-bottom" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Change Color
+    </button>
+
+    <!-- Modal - Start -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Pick your color:</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="bg-color">
+                    <label for="background_color">Background Color</label>
+                    <input type="color" id="background_color" class="js-bg-color-picker" data-theme-value="--primary" />
+                </div>
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal - End -->
 
     <!-- Navbar - Start -->
     <nav class="navbar navbar-expand-lg bg-light">
@@ -92,11 +119,11 @@
     <!-- Navbar - End -->
 
     <!-- Theme Settings - Start -->
-    <div class="bg-color">
+    <!-- <div class="bg-color">
         <label for="background_color">Background Color</label>
         <input type="color" id="background_color" class="js-bg-color-picker" data-theme-value="--primary" />
     </div>
-    </div>
+    </div> -->
     <!-- Theme Settings - End -->
 
     <!-- Hero - Start -->
@@ -104,12 +131,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
-                    <h5 class="basic-sub-title">Trusted Doctors 💜</h5>
+                    <h5 class="basic-sub-title">Trusted Doctors</h5>
                     <h3 class="basic-title">easy way to make
                         your life healthier
                     </h3>
-                    <p class="basic-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                    <p class="basic-desc">Lorem Ipsum is simply dummy text of the printing and <br> typesetting
+                        industry.
+                        Lorem Ipsum has been the <br> industry's standard dummy text ever.</p>
                     <button class="basic-btn">Get Started</button>
                 </div>
 
@@ -155,7 +183,9 @@
                                 </div>
                             </div>
 
-
+                            <div class="hero-image-bottom">
+                                <a href="#" class="hero-btn">make appointment</a>
+                            </div>
 
                         </div>
 
@@ -175,16 +205,17 @@
     <section id="services">
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex justify-content-between align-items-end mb-3">
-                    <h3 class="section-title">All Services that
+                <div class="col-12 d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="section-title text-capitalize">All Services that <br>
                         match your needs</h3>
 
-                    <h6 class="section-desc">Lorem Ipsum is simply dummy text of the printing typesetting industry.</h6>
+                    <h6 class="section-desc">Lorem Ipsum is simply dummy text of <br> the printing typesetting industry.
+                    </h6>
                 </div>
 
-                <div class="col-6 col-md-4 col-lg-3">
+                <div class="col-6 col-lg-3">
                     <div class="services-card">
-                        <div class="services-icon d-flex justify-content-center align-items-center">
+                        <div class="services-icon red d-flex justify-content-center align-items-center">
                             <img src="./assets/img/services/4.svg" alt="">
                         </div>
 
@@ -200,13 +231,13 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-4 col-lg-3">
+                <div class="col-6 col-lg-3">
                     <div class="services-card">
-                        <div class="services-icon d-flex justify-content-center align-items-center">
-                            <img src="./assets/img/services/4.svg" alt="">
+                        <div class="services-icon green d-flex justify-content-center align-items-center">
+                            <img src="./assets/img/services/1.svg" alt="">
                         </div>
 
-                        <h4 class="services-title mt-3">Get Free Consultation</h4>
+                        <h4 class="services-title mt-3">Medicinal Herb</h4>
                         <h4 class="services-desc mb-5">Lorem Ipsum is simply dummy
                             text of the printing typesetting
                             industry.</h4>
@@ -218,13 +249,13 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-4 col-lg-3">
+                <div class="col-6 col-lg-3">
                     <div class="services-card">
-                        <div class="services-icon d-flex justify-content-center align-items-center">
-                            <img src="./assets/img/services/4.svg" alt="">
+                        <div class="services-icon yellow d-flex justify-content-center align-items-center">
+                            <img src="./assets/img/services/2.svg" alt="">
                         </div>
 
-                        <h4 class="services-title mt-3">Get Free Consultation</h4>
+                        <h4 class="services-title mt-3">make an appointment</h4>
                         <h4 class="services-desc mb-5">Lorem Ipsum is simply dummy
                             text of the printing typesetting
                             industry.</h4>
@@ -236,13 +267,13 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-4 col-lg-3">
+                <div class="col-6 col-lg-3">
                     <div class="services-card">
-                        <div class="services-icon d-flex justify-content-center align-items-center">
-                            <img src="./assets/img/services/4.svg" alt="">
+                        <div class="services-icon blue d-flex justify-content-center align-items-center">
+                            <img src="./assets/img/services/3.svg" alt="">
                         </div>
 
-                        <h4 class="services-title mt-3">Get Free Consultation</h4>
+                        <h4 class="services-title mt-3">Find Trusted Doctor</h4>
                         <h4 class="services-desc mb-5">Lorem Ipsum is simply dummy
                             text of the printing typesetting
                             industry.</h4>
@@ -304,18 +335,18 @@
                             <h5 class="specialist-label">Pediatrician</h5>
                         </div>
                         <div class="specialist-record d-flex flex-column justify-content-start align-items-start">
-                            <h5 class="specialist-value">320+</h5>
-                            <h5 class="specialist-label">Pediatrician</h5>
+                            <h5 class="specialist-value">210+</h5>
+                            <h5 class="specialist-label">Obstetricians</h5>
                         </div>
                     </div>
                     <div class="d-flex justify-content-start align-items-center">
                         <div class="specialist-record d-flex flex-column justify-content-start align-items-start">
-                            <h5 class="specialist-value">320+</h5>
-                            <h5 class="specialist-label">Pediatrician</h5>
+                            <h5 class="specialist-value">190+</h5>
+                            <h5 class="specialist-label">experienced nurse</h5>
                         </div>
                         <div class="specialist-record d-flex flex-column justify-content-start align-items-start">
-                            <h5 class="specialist-value">320+</h5>
-                            <h5 class="specialist-label">Pediatrician</h5>
+                            <h5 class="specialist-value">2.5K+</h5>
+                            <h5 class="specialist-label">Trusted Doctors</h5>
                         </div>
                     </div>
 
@@ -337,8 +368,8 @@
             <div class="row">
                 <div class="col-12 col-lg-6 d-flex justify-content-end align-items-center">
                     <div class="reason-image-container position-relative">
-                        <svg class="position-absolute bottom-0 end-0" width="416" height="600" viewBox="0 0 416 600" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg class="position-absolute bottom-0 end-0" width="416" height="600" viewBox="0 0 416 600"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0 40C0 17.9086 17.9086 0 40 0H404C410.627 0 416 5.37258 416 12V560C416 582.091 398.091 600 376 600H12C5.37258 600 0 594.627 0 588V40Z"
                                 fill="url(#paint0_linear_1_3)" />
@@ -366,7 +397,7 @@
                                 choose our services
                             </h3>
 
-                            <div class="reason-card d-flex justify-content-start align-items-center">
+                            <div class="reason-card d-flex justify-content-start align-items-start">
                                 <div class="reason-icon d-flex justify-content-center align-items-center">
                                     <img src="./assets/img/icon/user-people.svg" alt="">
                                 </div>
@@ -374,31 +405,32 @@
                                     <h4 class="reason-title">no need to queue
                                     </h4>
 
-                                    <h5 class="reason-desc">Lorem Ipsum is simply dummy text
+                                    <h5 class="reason-desc">Lorem Ipsum is simply dummy text <br>
                                         of the printing typesetting industry.</h5>
                                 </div>
                             </div>
-                            <div class="reason-card d-flex justify-content-start align-items-center">
+                            <div class="reason-card d-flex justify-content-start align-items-start">
                                 <div class="reason-icon d-flex justify-content-center align-items-center">
-                                    <img src="./assets/img/icon/user-people.svg" alt="">
+                                    <img src="./assets/img/icon/timer.svg" alt="">
                                 </div>
                                 <div class="d-flex flex-column justify-content-start align-items-start">
-                                    <h4 class="reason-title">no need to queue
+                                    <h4 class="reason-title">fast and easy process
+
                                     </h4>
 
-                                    <h5 class="reason-desc">Lorem Ipsum is simply dummy text
+                                    <h5 class="reason-desc">Lorem Ipsum is simply dummy text <br>
                                         of the printing typesetting industry.</h5>
                                 </div>
                             </div>
-                            <div class="reason-card d-flex justify-content-start align-items-center">
+                            <div class="reason-card d-flex justify-content-start align-items-start">
                                 <div class="reason-icon d-flex justify-content-center align-items-center">
-                                    <img src="./assets/img/icon/user-people.svg" alt="">
+                                    <img src="./assets/img/icon/dollar.svg" alt="">
                                 </div>
                                 <div class="d-flex flex-column justify-content-start align-items-start">
-                                    <h4 class="reason-title">no need to queue
+                                    <h4 class="reason-title">price is very Affordable
                                     </h4>
 
-                                    <h5 class="reason-desc">Lorem Ipsum is simply dummy text
+                                    <h5 class="reason-desc">Lorem Ipsum is simply dummy text <br>
                                         of the printing typesetting industry.</h5>
                                 </div>
                             </div>
@@ -454,9 +486,8 @@
                                     <a href="#" class="article-btn">Read Now</a>
                                 </div>
                             </div>
-
                             <div class="swiper-slide article-card">
-                                <img class="article-thumbnail mb-2" src="./assets/img/article/1.png" alt="">
+                                <img class="article-thumbnail mb-2" src="./assets/img/article/2.png" alt="">
 
                                 <div class="article-content">
 
@@ -470,16 +501,16 @@
                                     </h3>
 
                                     <div class="mt-3 mb-4 d-flex justify-content-start align-items-center">
-                                        <img src="./assets/img/article/profile-1.png" alt="" class="article-profile">
+                                        <img src="./assets/img/article/profile-2.png" alt="" class="article-profile">
 
-                                        <h5 class="article-profile-name">Dr. Bambang</h5>
+                                        <h5 class="article-profile-name">Dr. Annie</h5>
                                     </div>
 
                                     <a href="#" class="article-btn">Read Now</a>
                                 </div>
                             </div>
                             <div class="swiper-slide article-card">
-                                <img class="article-thumbnail mb-2" src="./assets/img/article/1.png" alt="">
+                                <img class="article-thumbnail mb-2" src="./assets/img/article/3.png" alt="">
 
                                 <div class="article-content">
 
@@ -493,16 +524,17 @@
                                     </h3>
 
                                     <div class="mt-3 mb-4 d-flex justify-content-start align-items-center">
-                                        <img src="./assets/img/article/profile-1.png" alt="" class="article-profile">
+                                        <img src="./assets/img/article/profile-3.png" alt="" class="article-profile">
 
-                                        <h5 class="article-profile-name">Dr. Bambang</h5>
+                                        <h5 class="article-profile-name">Dr. Annie</h5>
                                     </div>
 
                                     <a href="#" class="article-btn">Read Now</a>
                                 </div>
                             </div>
+
                             <div class="swiper-slide article-card">
-                                <img class="article-thumbnail mb-2" src="./assets/img/article/1.png" alt="">
+                                <img class="article-thumbnail mb-2" src="./assets/img/article/4.png" alt="">
 
                                 <div class="article-content">
 
@@ -516,9 +548,9 @@
                                     </h3>
 
                                     <div class="mt-3 mb-4 d-flex justify-content-start align-items-center">
-                                        <img src="./assets/img/article/profile-1.png" alt="" class="article-profile">
+                                        <img src="./assets/img/article/profile-4.png" alt="" class="article-profile">
 
-                                        <h5 class="article-profile-name">Dr. Bambang</h5>
+                                        <h5 class="article-profile-name">Dr. Sage Skye</h5>
                                     </div>
 
                                     <a href="#" class="article-btn">Read Now</a>
@@ -566,16 +598,17 @@
                             </div>
                         </div>
 
-                        <h5 class="review-desc">“Lorem Ipsum is simply dummy text the printing industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s”</h5>
+                        <h5 class="review-desc">“Lorem Ipsum is simply dummy text the printing industry. <br> Lorem
+                            Ipsum has
+                            been the industry's standard dummy <br> text ever since the 1500s”</h5>
                     </div>
 
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="d-flex justify-content-start align-items-center">
-                                <img class="review-profile" src="./assets/img/review/1.png" alt="">
+                                <img class="review-profile" src="./assets/img/review/2.png" alt="">
 
-                                <h4 class="review-name">Chamber Diff</h4>
+                                <h4 class="review-name">Reyna Botfrag</h4>
                             </div>
 
                             <div class="d-flex justify-content-start align-items-center">
@@ -587,8 +620,9 @@
                             </div>
                         </div>
 
-                        <h5 class="review-desc">“Lorem Ipsum is simply dummy text the printing industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s”</h5>
+                        <h5 class="review-desc">“Lorem Ipsum is simply dummy text the printing industry. <br> Lorem
+                            Ipsum has
+                            been the industry's standard dummy <br> text ever since the 1500s”</h5>
                     </div>
 
                     <a href="#" class="basic-btn no-fill">See More Stories</a>
@@ -597,16 +631,20 @@
 
                 <div class="col-12 col-lg-6 d-flex justify-content-end align-items-center">
                     <div class="review-image-container position-relative">
-                        <svg class="position-absolute bottom-0 end-0" width="416" height="600" viewBox="0 0 416 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 40C0 17.9086 17.9086 0 40 0H404C410.627 0 416 5.37258 416 12V560C416 582.091 398.091 600 376 600H12C5.37258 600 0 594.627 0 588V40Z" fill="url(#paint0_linear_1_3)"/>
+                        <svg width="416" height="485" viewBox="0 0 416 485" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 12C0 5.37257 5.37258 0 12 0H376C398.091 0 416 17.9086 416 40V473C416 479.627 410.627 485 404 485H40C17.9086 485 0 467.091 0 445V12Z"
+                                fill="url(#paint0_linear_1_286)" />
                             <defs>
-                            <linearGradient id="paint0_linear_1_3" x1="416" y1="578.5" x2="44.7171" y2="-22.0408" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#0C64DC"/>
-                            <stop offset="0.876286" stop-color="#2C95DB"/>
-                            </linearGradient>
+                                <linearGradient id="paint0_linear_1_286" x1="416" y1="467.621" x2="147.686"
+                                    y2="-69.2751" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#0C64DC" />
+                                    <stop offset="0.876286" stop-color="#2C95DB" />
+                                </linearGradient>
                             </defs>
-                            </svg>
-                            
+                        </svg>
+
                         <div
                             class="review-image-card d-flex flex-column justify-content-center align-items-center position-absolute">
                             <div class="review-image-icon">
@@ -616,7 +654,7 @@
                             <h5 class="review-image-label">Total Patient</h5>
                         </div>
 
-                        <img src="./assets/img/reason/image.png" alt="" class="position-absolute bottom-0 img-fluid">
+                        <img class="review-thumbnail  img-fluid" src="./assets/img/review/image.png" alt="" class="position-absolute bottom-0 img-fluid">
                     </div>
                 </div>
 
@@ -642,24 +680,26 @@
                 <div class="col-6 col-lg-3">
                     <h5 class="footer-title">Our Product</h5>
                     <h5 class="footer-item">Appointment Doctor</h5>
-                    <h5 class="footer-item">Appointment Doctor</h5>
-                    <h5 class="footer-item">Appointment Doctor</h5>
-                    <h5 class="footer-item">Appointment Doctor</h5>
+                    <h5 class="footer-item">Free Consultation</h5>
+                    <h5 class="footer-item">Medicinal Herb</h5>
+                    <h5 class="footer-item">Find Trusted Doctor</h5>
+                    <h5 class="footer-item">Test Covid 19</h5>
+                    <h5 class="footer-item">Booster Vaccine</h5>
                 </div>
                 <div class="col-6 col-lg-2">
-                    <h5 class="footer-title">Our Product</h5>
+                    <h5 class="footer-title">Useful Links</h5>
                     <h5 class="footer-item">Contact Us</h5>
-                    <h5 class="footer-item">Contact Us</h5>
-                    <h5 class="footer-item">Contact Us</h5>
-                    <h5 class="footer-item">Contact Us</h5>
+                    <h5 class="footer-item">About Us</h5>
+                    <h5 class="footer-item">Articles</h5>
+                    <h5 class="footer-item">Pharmacy </h5>
 
                 </div>
                 <div class="col-6 col-lg-2">
-                    <h5 class="footer-title">Our Product</h5>
-                    <h5 class="footer-item">Contact Us</h5>
-                    <h5 class="footer-item">Contact Us</h5>
-                    <h5 class="footer-item">Contact Us</h5>
-                    <h5 class="footer-item">Contact Us</h5>
+                    <h5 class="footer-title">Tips & Tricks</h5>
+                    <h5 class="footer-item">Tiktok</h5>
+                    <h5 class="footer-item">Blog</h5>
+                    <h5 class="footer-item">Twitter</h5>
+                    <h5 class="footer-item">Instagram</h5>
                 </div>
             </div>
 
@@ -684,6 +724,20 @@
             slidesPerGroup: 4,
             loop: true,
             loopFillGroupWithBlank: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                991: {
+                    slidesPerView: 4,
+                    spaceBetween: 35,
+                },
+            },
         });
 
 
